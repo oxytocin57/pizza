@@ -11,6 +11,8 @@ body, button, span {
 .header {
   display: flex;
   justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 16px;
 
   &__right {
     display: flex;
@@ -29,35 +31,40 @@ body, button, span {
       font-weight: 700;
       font-size: 15px;
     }
+
     p {
       color: #696F7AF2;
       font-weight: 600;
       font-size: 14px;
-
+      line-height: 28px;
 
     }
-    &-stage{
+
+    &-stage {
       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 2px;
+
       &:first-child {
-        span{
+        span {
           color: #231F20;
           background-color: #F7D22D;
           opacity: 1;
         }
-        p{
+
+        p {
           color: #0E0C0DCC;
           font-weight: 700;
         }
       }
+    }
   }
-}
 
 }
+
 .dotted {
   height: 1px;
   width: 102px;
@@ -66,4 +73,98 @@ body, button, span {
   top: 22px;
   left: 66px;
 
+  &_large {
+    left: 121px;
+  }
 }
+
+.cart {
+  border-top: 2px solid #ECECF1;
+
+}
+
+.order {
+  max-width: 797px;
+  width: 100%;
+  margin: 0 auto;
+
+  h1 {
+    color: #F7D22D;
+    font-weight: 800;
+    font-size: 36px;
+    margin: 30px 0 33px 0;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 0;
+    border-bottom: 1px solid #ECECF1;
+    &:nth-child(1) {
+      border-top: 1px solid #ECECF1;
+    }
+
+
+    &-left {
+      display: flex;
+      gap: 25px;
+    }
+
+    &-right {
+      display: flex;
+      gap: 34px;
+      align-items: center;
+    }
+  }
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 409px;
+
+  h5 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #0E0C0D;
+  }
+
+  p {
+    margin-top: 9px;
+    color: #686466;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+}
+
+.price {
+  color: #F7D22D;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 93px;
+  height: 32px;
+  background: #F3F3F7;
+  border: none;
+  border-radius: 8px;
+
+  p {
+    color: #696F7A;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.delete {
+  background: none;
+  border: none;
+}
+
