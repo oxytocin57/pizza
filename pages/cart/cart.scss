@@ -94,32 +94,129 @@ body, button, span {
     margin-top: 43px;
   }
 
-  &__bottom {
+
+  &__promo {
     display: flex;
     justify-content: space-between;
+    margin: 27px auto 0 auto;
+    max-width: 797px;
+    width: 100%;
 
     &-left {
-display: flex;
-      justify-content: space-around;
+      height: 43px;
+
+
+      display: flex;
       align-items: center;
       max-width: 353px;
       width: 100%;
-      height: 43px;
       background: none;
-      border: 1.5px solid #ECECF1;
-      border-radius: 8px;
-      padding: 0;
-      p{
+
+      button {
+        border: none;
+        background-color: #F7D22D;
+        height: 43px;
+        border-radius: 0 8px 8px 0;
+        padding: 7px 27px 8px 25px;
+
+        span {
+          font-weight: 700;
+          font-size: 13px;
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+
+
+      p {
+        &:last-child {
+          font-size: 36px;
+          color: #F7D22D;
+          margin-left: 8px;
+        }
+
+        font-weight: 600;
+        color: #0E0C0D;
+        font-size: 24px;
+        margin: 0;
+      }
+    }
+
+    &-input {
+      box-sizing: border-box;
+      border: 1.5px solid #E2E2E9;
+      padding: 7px 63px 8px 24px;
+      border-right: none;
+      border-radius: 8px 0 0 8px;
+      height: 43px;
+
+      p {
         font-weight: 600;
         font-size: 13px;
         color: #686466;
         opacity: 0.8;
+        line-height: 28px;
+        height: 43px;
+        white-space: nowrap;
       }
-      span{
+    }
+  }
+
+  &__transfer {
+    margin: 53px auto 33px auto;
+    max-width: 797px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      display: flex;
+      align-items: center;
+      border: none;
+    }
+    a{
+      text-decoration: none;
+    }
+
+    &-left {
+      background: none;
+      gap: 15px;
+      cursor: pointer;
+      transition: opacity 0.3s ease-out;
+      &:hover{
+        opacity: 0.7;
+        transition: opacity 0.3s ease-out;
+      }
+
+      a{
+        color: #696F7A;
+        font-size: 15px;
         font-weight: 700;
-        font-size: 13px;
-        width: 133px;
-        background-color: #F7D22D;
+      }
+    }
+    &-right{
+      width: 224px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      border-radius: 8px;
+      background-color: #F7D22D;
+      cursor: pointer;
+      transition: opacity 0.3s ease-out;
+      &:hover {
+        opacity: 0.7;
+        transition: opacity 0.3s ease-out;
+      }
+      a{
+        color: #231F20;
+        font-size: 15px;
+        font-weight: 800;
       }
     }
   }
@@ -336,4 +433,9 @@ display: flex;
       font-weight: 700;
     }
   }
+}
+
+.yellow {
+  width: 133px;
+  background-color: #FF2E65;
 }

@@ -48,6 +48,7 @@ footer a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 33px;
 }
 .footer__right a {
   color: #F7D22D;
