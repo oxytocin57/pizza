@@ -1,0 +1,161 @@
+body, button, span, input, textarea {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ECECF1;
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+  &__right {
+    display: flex;
+    gap: 65px;
+
+    span {
+      color: #F7D22D;
+      opacity: 0.6;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 2px solid #F7D22D;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    p {
+      color: #696F7AF2;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 28px;
+
+    }
+
+    &-stage {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+
+      &:first-child {
+        span {
+          color: #231F20;
+          background-color: #F7D22D;
+          opacity: 1;
+        }
+
+        p {
+          color: #0E0C0DCC;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+.dotted {
+  height: 1px;
+  width: 102px;
+  border-top: 2px dashed #B8C5D0;
+  position: absolute;
+  top: 22px;
+  left: 66px;
+
+  &_large {
+    left: 121px;
+  }
+}
+.delivery{
+  &__order{
+    &-input{
+      display: flex;
+      justify-content: space-between;
+      width: 730px;
+      align-items: center;
+      position: relative;
+      textarea{
+        width: 539px;
+        height: 75px;
+        border: 1.5px solid #E2E2E9;
+        border-radius: 7px;
+        color: #231F20;
+        opacity: 0.7;
+        font-weight: 700;
+        font-size: 17px;
+        padding: 10px 0 10px 19px;
+        box-sizing: border-box;
+
+      }
+      .change{
+        position: absolute;
+        right: 19px;
+        top: 13px;
+        color: #F7D22D;
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .pickup{
+        position: absolute;
+        right: 19px;
+        color: #F7D22D;
+        font-size: 15px;
+        font-weight: 700;
+        bottom: 10px
+      }
+
+      input{
+        width: 539px;
+        height: 48px;
+        border: 1.5px solid #E2E2E9;
+        border-radius: 7px;
+        color: #231F20;
+        font-weight: 700;
+        font-size: 17px;
+        padding: 10px 0 10px 19px;
+        box-sizing: border-box;
+      }
+      label{
+        color: #231F20;
+        opacity: 0.7;
+        font-size: 17px;
+        font-weight: 600;
+      }
+    }
+    &-left{
+      h1{
+        color: #F7D22D;
+        font-size: 32px;
+        font-weight: 800;
+        margin: 30px 0;
+      }
+      &-form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      &-promo{
+        margin: 40px 0 27px 0 ;
+        h2{
+          font-weight: 600;
+          font-size: 22px;
+          color: #F7D22D;
+        }
+
+      }
+    }
+  }
+}
